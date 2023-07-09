@@ -1,0 +1,67 @@
+body{
+  background: linear-gradient(#42047e 40%,#07f49e );
+  text-align: center;
+  padding: 0;
+  height: 100vh;
+}
+.App{
+  margin: 0 33%;
+}
+.drum-pad-container{
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+}
+.active-drum{
+  background-color: #ff0000;
+  text-align: right;
+}
+#drumpad{
+  background-color: #C895FC;
+}
+.drum-pad {
+  font-weight: 900;
+  overflow:hidden;
+  width:100px;
+  height: 88px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 20px;
+  line-height: 80px;
+  padding: 5px;
+  transition: background-color 0.2s;
+}
+.drum-pad:focus {
+  outline: none;
+}
+
+.drum-pad.active {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+
+.drum-pad-container {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 15vh;
+}
+@media only screen and (max-width:600px){
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20Vh;
+  }
+  .drum-pad {
+    width: 83px;
+    height: 80px;
+  }
+}
